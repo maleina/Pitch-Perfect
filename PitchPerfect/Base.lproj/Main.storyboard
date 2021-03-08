@@ -100,7 +100,7 @@
                                                     <action selector="playSoundForButton:" destination="qou-ad-QUc" eventType="touchUpInside" id="5Ru-GO-veh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxJ-VB-J17" userLabel="Fast Button">
+                                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxJ-VB-J17" userLabel="Fast Button">
                                                 <rect key="frame" x="195" y="0.0" width="195" height="216.66666666666666"/>
                                                 <state key="normal" image="Fast"/>
                                                 <userDefinedRuntimeAttributes>
@@ -117,7 +117,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d42-WT-0jX">
                                         <rect key="frame" x="0.0" y="216.66666666666669" width="390" height="216.66666666666669"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ6-Iw-yfb" userLabel="High Pitch Button">
+                                            <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ6-Iw-yfb" userLabel="High Pitch Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="195" height="216.66666666666666"/>
                                                 <state key="normal" image="HighPitch"/>
                                                 <userDefinedRuntimeAttributes>
@@ -129,7 +129,7 @@
                                                     <action selector="playSoundForButton:" destination="qou-ad-QUc" eventType="touchUpInside" id="PEM-zM-580"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaF-dm-7QT" userLabel="Low Pitch Button">
+                                            <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaF-dm-7QT" userLabel="Low Pitch Button">
                                                 <rect key="frame" x="195" y="0.0" width="195" height="216.66666666666666"/>
                                                 <state key="normal" image="LowPitch"/>
                                                 <userDefinedRuntimeAttributes>
@@ -144,9 +144,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZH2-pM-qCB">
-                                        <rect key="frame" x="0.0" y="433.33333333333337" width="390" height="216.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="433.33333333333343" width="390" height="216.66666666666669"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-9O-B7k" userLabel="Echo Button">
+                                            <button opaque="NO" tag="4" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-9O-B7k" userLabel="Echo Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="195" height="216.66666666666666"/>
                                                 <state key="normal" image="Echo"/>
                                                 <userDefinedRuntimeAttributes>
@@ -158,7 +158,7 @@
                                                     <action selector="playSoundForButton:" destination="qou-ad-QUc" eventType="touchUpInside" id="zR6-Or-r2h"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzM-E6-NN5" userLabel="Reverb Button">
+                                            <button opaque="NO" tag="5" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzM-E6-NN5" userLabel="Reverb Button">
                                                 <rect key="frame" x="195" y="0.0" width="195" height="216.66666666666666"/>
                                                 <state key="normal" image="Reverb"/>
                                                 <userDefinedRuntimeAttributes>
