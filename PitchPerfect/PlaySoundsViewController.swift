@@ -33,6 +33,8 @@ class PlaySoundsViewController: UIViewController {
     // MARK: Actions
 
     @IBAction func playSoundForButton(_ sender: UIButton) {
+        
+        //playback the proper effect depending on which button was pressed
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
             playSound(rate: 0.5)
@@ -48,6 +50,7 @@ class PlaySoundsViewController: UIViewController {
             playSound(reverb: true)
         }
 
+        // ensure that the UI is configured for playback mode
         configureUI(.playing)
     }
 
@@ -58,7 +61,7 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Setup to ensure that buttons don't stretch
         snailButton.contentMode = .center
         snailButton.imageView?.contentMode = .scaleAspectFit
         chipmunkButton.contentMode = .center
@@ -72,12 +75,15 @@ class PlaySoundsViewController: UIViewController {
         reverbButton.contentMode = .center
         reverbButton.imageView?.contentMode = .scaleAspectFit
         
+        // set up and initialize audio file
         setupAudio()        
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // ensure the UI is set up properly when no audio is playing
         configureUI(.notPlaying)
     }
 
